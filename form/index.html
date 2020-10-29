@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+</head>
+<body>
+    <form action="/simpan" method="post">
+        <fieldset style="width: 30%">
+            <legend>Register</legend>
+            <table>
+                <tr>
+                    <td>E-mail</td>
+                    <td>:</td>
+                    <td><input type="email" name="email" id="email" autofocus /></td>
+                </tr>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td>:</td>
+                    <td><input type="text" name="name" id="name" /></td>
+                </tr>
+                <tr>
+                    <td>Tempat Lahir</td>
+                    <td>:</td>
+                    <td><input type="text" name="birth_place" id="birth_place" /></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input type="date" name="birth_date" id="birth_date" /></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td><textarea name="address" id="address" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="gender" value="1" checked />&nbsp;Laki-laki
+                        <input type="radio" name="gender" value="0" />&nbsp;Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>No. HP</td>
+                    <td>:</td>
+                    <td><input type="numbe" name="phone_number" id="phone_number" /></td>
+                </tr>
+                <tr>
+                    <td>Asal Sekolah</td>
+                    <td>:</td>
+                    <td><input type="text" name="school" id="school" /></td>
+                </tr>
+                <tr>
+                    <td>Nilai UN</td>
+                    <td>:</td>
+                    <td><input type="number" name="un" id="un" value="0" min="0" max="100" /></td>
+                </tr>
+                <tr>
+                    <td>Tahun Ajaran</td>
+                    <td>:</td>
+                    <td>
+                        <select name="school_year" id="school_year">
+                            <option selected disabled>-- Pilih Tahun Ajaran --</option>
+                            <option value="0">2020/2021</option>
+                            <option value="1">2019/2020</option>
+                            <option value="2">2018/2019</option>
+                            <option value="2">2017/2018</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
